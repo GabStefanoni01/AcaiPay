@@ -1,1 +1,1 @@
-# A-a-Pay
+# AcaiPay
