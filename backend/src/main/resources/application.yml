@@ -20,3 +20,14 @@ server:
 logging:
   level:
     com.acaipay: DEBUG
+
+jwt:
+  secret: mySuperSecretKeyForAcaipayApplicationChangeThisInProduction123!
+  expiration: 86400000  # 24 horas em milissegundos
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-value: ${jwt.secret}
